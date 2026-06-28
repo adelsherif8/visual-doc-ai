@@ -1,0 +1,135 @@
+{
+  "doc_type": "receipt",
+  "fields": [
+    {
+      "key": "merchant",
+      "value": "GREENLEAF MARKET",
+      "bbox": [
+        112,
+        32,
+        348,
+        48
+      ],
+      "confidence": 0.962
+    },
+    {
+      "key": "date",
+      "value": "2026-06-12 14:32",
+      "bbox": [
+        140,
+        123,
+        285,
+        134
+      ],
+      "confidence": 0.919
+    },
+    {
+      "key": "subtotal",
+      "value": "$29.15",
+      "bbox": [
+        345,
+        318,
+        399,
+        332
+      ],
+      "confidence": 0.965
+    },
+    {
+      "key": "tax",
+      "value": "$0.00",
+      "bbox": [
+        354,
+        344,
+        399,
+        358
+      ],
+      "confidence": 0.936
+    },
+    {
+      "key": "total",
+      "value": "$29.15",
+      "bbox": [
+        332,
+        375,
+        399,
+        394
+      ],
+      "confidence": 0.934
+    },
+    {
+      "key": "payment_method",
+      "value": "VISA ****1234",
+      "bbox": [
+        140,
+        415,
+        257,
+        426
+      ],
+      "confidence": 0.962
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Organic Bananas 1.2kg",
+      "qty": "1",
+      "amount": "$2.38",
+      "bbox": [
+        30,
+        168,
+        399,
+        182
+      ]
+    },
+    {
+      "description": "Almond Milk 1L",
+      "qty": "1",
+      "amount": "$3.49",
+      "bbox": [
+        30,
+        194,
+        399,
+        208
+      ]
+    },
+    {
+      "description": "Sourdough Loaf",
+      "qty": "1",
+      "amount": "$5.00",
+      "bbox": [
+        30,
+        221,
+        399,
+        234
+      ]
+    },
+    {
+      "description": "Free-Range Eggs x12",
+      "qty": "1",
+      "amount": "$6.29",
+      "bbox": [
+        30,
+        247,
+        399,
+        260
+      ]
+    },
+    {
+      "description": "Dark Roast Coffee 340g",
+      "qty": "1",
+      "amount": "$11.99",
+      "bbox": [
+        30,
+        273,
+        399,
+        286
+      ]
+    }
+  ],
+  "baseline_keys": [
+    "date",
+    "subtotal",
+    "tax",
+    "total"
+  ],
+  "full_text": "GREENLEAF MARKET\n412 Cedar Avenue, Portland OR\n(503) 555-0147\nDate:\n2026-06-12 14:32\nOrganic Bananas 1.2kg\n$2.38\nAlmond Milk 1L\n$3.49\nSourdough Loaf\n$5.00\nFree-Range Eggs x12\n$6.29\nDark Roast Coffee 340g\n$11.99\nSubtotal\n$29.15\nTax (0%)\n$0.00\nTOTAL\n$29.15\nPaid:\nVISA ****1234\n*** THANK YOU ***"
+}

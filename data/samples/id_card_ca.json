@@ -1,0 +1,90 @@
+{
+  "doc_type": "id_card",
+  "fields": [
+    {
+      "key": "document_type",
+      "value": "DRIVER LICENSE",
+      "bbox": [
+        300,
+        28,
+        451,
+        41
+      ],
+      "confidence": 0.963
+    },
+    {
+      "key": "full_name",
+      "value": "RIVERA, JORDAN A.",
+      "bbox": [
+        216,
+        114,
+        392,
+        130
+      ],
+      "confidence": 0.98
+    },
+    {
+      "key": "id_number",
+      "value": "D1234567",
+      "bbox": [
+        216,
+        164,
+        299,
+        177
+      ],
+      "confidence": 0.965
+    },
+    {
+      "key": "date_of_birth",
+      "value": "1994-03-22",
+      "bbox": [
+        216,
+        213,
+        293,
+        224
+      ],
+      "confidence": 0.972
+    },
+    {
+      "key": "issue_date",
+      "value": "2022-04-01",
+      "bbox": [
+        430,
+        213,
+        507,
+        224
+      ],
+      "confidence": 0.944
+    },
+    {
+      "key": "expiry_date",
+      "value": "2030-03-22",
+      "bbox": [
+        560,
+        213,
+        637,
+        224
+      ],
+      "confidence": 0.931
+    },
+    {
+      "key": "address",
+      "value": "1490 Sunset Blvd, Los Angeles CA 90026",
+      "bbox": [
+        216,
+        266,
+        475,
+        280
+      ],
+      "confidence": 0.926
+    }
+  ],
+  "line_items": [],
+  "baseline_keys": [
+    "id_number",
+    "date_of_birth",
+    "issue_date",
+    "expiry_date"
+  ],
+  "full_text": "CALIFORNIA\nDRIVER LICENSE\nPHOTO\nLN / FN\nRIVERA, JORDAN A.\nDL\nD1234567\nDOB\n1994-03-22\nISS\n2022-04-01\nEXP\n2030-03-22\nADDRESS\n1490 Sunset Blvd, Los Angeles CA 90026\nClass C  \u00b7  Sex M  \u00b7  Hgt 5-10  \u00b7  Eyes BRN"
+}

@@ -1,0 +1,141 @@
+{
+  "doc_type": "invoice",
+  "fields": [
+    {
+      "key": "vendor_name",
+      "value": "TechFlow Solutions Inc.",
+      "bbox": [
+        54,
+        60,
+        395,
+        82
+      ],
+      "confidence": 0.955
+    },
+    {
+      "key": "invoice_number",
+      "value": "INV-2026-0042",
+      "bbox": [
+        600,
+        121,
+        708,
+        133
+      ],
+      "confidence": 0.932
+    },
+    {
+      "key": "invoice_date",
+      "value": "2026-06-15",
+      "bbox": [
+        600,
+        171,
+        682,
+        183
+      ],
+      "confidence": 0.953
+    },
+    {
+      "key": "due_date",
+      "value": "2026-07-15",
+      "bbox": [
+        600,
+        219,
+        682,
+        231
+      ],
+      "confidence": 0.953
+    },
+    {
+      "key": "bill_to",
+      "value": "Acme Corporation",
+      "bbox": [
+        54,
+        315,
+        194,
+        330
+      ],
+      "confidence": 0.945
+    },
+    {
+      "key": "subtotal",
+      "value": "$7,200.00",
+      "bbox": [
+        672,
+        598,
+        743,
+        614
+      ],
+      "confidence": 0.965
+    },
+    {
+      "key": "tax",
+      "value": "$594.00",
+      "bbox": [
+        672,
+        628,
+        730,
+        642
+      ],
+      "confidence": 0.936
+    },
+    {
+      "key": "total",
+      "value": "$7,794.00",
+      "bbox": [
+        672,
+        663,
+        770,
+        684
+      ],
+      "confidence": 0.934
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Platform subscription (annual)",
+      "qty": "1",
+      "amount": "$4,800.00",
+      "bbox": [
+        66,
+        467,
+        279,
+        482,
+        731,
+        482
+      ]
+    },
+    {
+      "description": "Onboarding & implementation",
+      "qty": "1",
+      "amount": "$1,500.00",
+      "bbox": [
+        66,
+        507,
+        278,
+        522,
+        731,
+        522
+      ]
+    },
+    {
+      "description": "Additional API seats",
+      "qty": "10",
+      "amount": "$900.00",
+      "bbox": [
+        65,
+        547,
+        208,
+        559,
+        718,
+        560
+      ]
+    }
+  ],
+  "baseline_keys": [
+    "invoice_number",
+    "invoice_date",
+    "due_date",
+    "total"
+  ],
+  "full_text": "TechFlow Solutions Inc.\n880 Innovation Way, Suite 200\nAustin, TX 78701  \u00b7  billing@techflow.io\nINVOICE\nInvoice #\nINV-2026-0042\nInvoice Date\n2026-06-15\nDue Date\n2026-07-15\nBILL TO\nAcme Corporation\n123 Market Street\nSan Francisco, CA 94103\nDescription\nQty\nAmount\nPlatform subscription (annual)\n1\n$4,800.00\nOnboarding & implementation\n1\n$1,500.00\nAdditional API seats\n10\n$900.00\nSubtotal\n$7,200.00\nTax (8.25%)\n$594.00\nTotal Due\n$7,794.00\nPayment due within 30 days. Thank you for your business."
+}

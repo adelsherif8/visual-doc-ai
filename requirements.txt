@@ -1,0 +1,6 @@
+openai>=1.40
+langfuse>=4.0
+gradio==6.19.0
+python-dotenv>=1.0
+pillow>=10.2
+pytesseract>=0.3.10
