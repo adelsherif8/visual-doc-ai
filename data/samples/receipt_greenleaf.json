@@ -1,5 +1,7 @@
 {
   "doc_type": "receipt",
+  "width": 460,
+  "height": 760,
   "fields": [
     {
       "key": "merchant",

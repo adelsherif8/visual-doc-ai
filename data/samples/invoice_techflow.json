@@ -1,5 +1,7 @@
 {
   "doc_type": "invoice",
+  "width": 820,
+  "height": 1060,
   "fields": [
     {
       "key": "vendor_name",

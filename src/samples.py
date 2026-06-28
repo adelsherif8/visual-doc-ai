@@ -90,6 +90,8 @@ class _Doc:
         full_text = "\n".join(w["text"] for w in self.words)
         meta = {
             "doc_type": doc_type,
+            "width": self.img.width,
+            "height": self.img.height,
             "fields": self.fields,
             "line_items": self.line_items,
             "baseline_keys": baseline_keys,
