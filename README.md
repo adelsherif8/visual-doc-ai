@@ -32,6 +32,8 @@ Mart receipt — 6 fields extracted with OCR-grounded boxes, +5 over the baselin
 
 ## How it works
 
+![pipeline](docs/workflow.png)
+
 ```
         page image
             │
