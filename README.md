@@ -22,7 +22,13 @@ Upload an **invoice, receipt, or ID** and get back:
 This is the "turn documents into data" bucket that almost every business needs —
 invoice capture, receipt/expense automation, KYC/ID onboarding.
 
-![screenshot](docs/screenshot.png) <!-- add a screenshot of the running app here -->
+![screenshot](docs/screenshot.png)
+
+It also works on **real-world documents you upload**, not just the bundled
+samples. Here it's run live (`OPENAI_API_KEY` set) on a real photographed Save
+Mart receipt — 6 fields extracted with OCR-grounded boxes, +5 over the baseline:
+
+![real upload](docs/real-upload.png)
 
 ## How it works
 
