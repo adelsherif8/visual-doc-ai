@@ -22,10 +22,11 @@ ST = status()
 SAMPLES = extract.list_samples()
 _BY_LABEL = {s.label: s for s in SAMPLES}
 
-ENGINE_VLM = f"✨ VLM ({ST['model']})"
-ENGINE_BASE = "⚙️ Baseline (OCR + regex)"
+ENGINE_VLM = f"VLM ({ST['model']})"
+ENGINE_BASE = "Baseline (OCR + regex)"
 
 CSS = """
+.sq{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:middle;margin-right:3px}
 .kpi{display:inline-block;background:#f3f4f6;border-radius:999px;padding:4px 14px;
   font-size:12px;margin:0 6px 6px 0;color:#374151;font-variant-numeric:tabular-nums}
 .kpi b{color:#111827}
@@ -142,14 +143,14 @@ def load_preview(sample_label):
     return s.path
 
 
-MODE = "🟢 LIVE (OpenAI)" if not ST["mock"] else "🟡 MOCK (no key — deterministic offline demo)"
+MODE = "LIVE (OpenAI)" if not ST["mock"] else "MOCK (no key — deterministic offline demo)"
 OCR = "OCR on (tesseract)" if ST["ocr"] else "OCR off (install tesseract for live uploads)"
 LF = "Langfuse tracing ON" if ST["langfuse"] else "Langfuse off"
 
 with gr.Blocks(title="Visual Document AI") as demo:
     gr.HTML(f"<style>{CSS}</style>")
     gr.Markdown(
-        f"# 📄 Visual Document AI — extract structured data from any document\n"
+        f"# Visual Document AI — extract structured data from any document\n"
         f"Upload an invoice, receipt, or ID → get **boxes drawn over every field**, "
         f"**structured JSON with confidence**, and a **baseline-vs-VLM** comparison.\n\n"
         f"`{MODE}` · model `{ST['model']}` · {OCR} · {LF}"
@@ -165,8 +166,11 @@ with gr.Blocks(title="Visual Document AI") as demo:
             engine = gr.Radio([ENGINE_VLM, ENGINE_BASE], value=ENGINE_VLM, label="Show boxes from")
             run_btn = gr.Button("Extract fields", variant="primary")
             gr.Markdown(
-                "🟩 high · 🟧 medium · 🟥 low confidence. Boxes are grounded in the page "
-                "via the OCR layer; the VLM decides what each value *means*."
+                "<span class='sq' style='background:#10b981'></span> high &nbsp;"
+                "<span class='sq' style='background:#d97706'></span> medium &nbsp;"
+                "<span class='sq' style='background:#dc2626'></span> low confidence. "
+                "Boxes are grounded in the page via the OCR layer; the VLM decides "
+                "what each value *means*."
             )
         with gr.Column(scale=3):
             kpi = gr.HTML()

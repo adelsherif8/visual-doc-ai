@@ -28,9 +28,9 @@ class Sample:
 
 
 _SAMPLE_LABELS = {
-    "invoice_techflow": "🧾 SaaS Invoice",
-    "receipt_greenleaf": "🛒 Store Receipt",
-    "id_card_ca": "🪪 ID Card",
+    "invoice_techflow": "SaaS Invoice",
+    "receipt_greenleaf": "Store Receipt",
+    "id_card_ca": "ID Card",
 }
 
 
